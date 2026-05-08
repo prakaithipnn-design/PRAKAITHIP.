@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แนะนำตัวเอง - ประกายทิพย์ น้อยสิงห์</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Sarabun', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            /* พื้นหลังแนวโลจิสติกส์โทนสีสบายตา */
+            background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), 
+                        url('https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&q=80&w=2000');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .profile-card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 40px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+            padding: 50px 40px;
+            width: 420px;
+            text-align: center;
+            border: 10px solid #e0f2f1; /* สีเขียวพาสเทลอ่อน */
+            transition: transform 0.3s ease;
+        }
+
+        .profile-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .image-wrapper {
+            position: relative;
+            margin-bottom: 25px;
+        }
+
+        .profile-img {
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 8px solid #b3e5fc; /* สีฟ้าพาสเทล */
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #2d5a27; /* สีเขียวเข้มสุภาพ */
+            margin: 15px 0 5px 0;
+            font-size: 1.6em;
+            letter-spacing: 0.5px;
+        }
+
+        .student-id {
+            background-color: #e1f5fe; /* สีฟ้าอ่อนพาสเทล */
+            color: #0288d1;
+            padding: 8px 20px;
+            border-radius: 12px;
+            font-weight: bold;
+            font-size: 1.1em;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        .faculty-info {
+            background: linear-gradient(135deg, #b2dfdb 0%, #81d4fa 100%);
+            color: #1a3a3a;
+            padding: 12px 25px;
+            border-radius: 30px;
+            font-weight: 700;
+            font-size: 0.95em;
+            box-shadow: 0 5px 15px rgba(0,188,212,0.2);
+            line-height: 1.4;
+        }
+
+        .description {
+            margin-top: 30px;
+            color: #546e7a;
+            font-size: 0.9em;
+            border-top: 1px dashed #cfd8dc;
+            padding-top: 20px;
+        }
+
+        .logo-pim {
+            font-weight: bold;
+            color: #2d5a27;
+            margin-top: 10px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="profile-card">
+        <div class="image-wrapper">
+            <img src="ประกายทิพย์ น้อยสิงห์.jpg" alt="รูปโปรไฟล์ ประกายทิพย์ น้อยสิงห์" class="profile-img">
+        </div>
+
+        <h2>นางสาวประกายทิพย์ น้อยสิงห์</h2>
+        
+        <div class="student-id">
+            ID: 6650101117
+        </div>
+
+        <div class="faculty-info">
+            คณะการจัดการโลจิสติกส์<br>และการคมนาคมขนส่ง
+        </div>
+
+        <div class="description">
+            <p>มุ่งมั่นพัฒนาทักษะด้านการบริหารจัดการการขนส่ง<br>และห่วงโซ่อุปทานเพื่ออนาคต</p>
+            <span class="logo-pim">Panyapiwat Institute of Management</span>
+        </div>
+    </div>
+
+</body>
+</html>
